@@ -286,6 +286,106 @@
                 width: 0;
             }
         }
+		
+		/* Media query cho thiết bị có chiều rộng tối đa là 768px (máy tính bảng) */
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 80%; /* Giới hạn chiều rộng của khung chứa */
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .slider {
+        max-width: 250px; /* Điều chỉnh kích thước slider cho phù hợp */
+        height: 250px;
+    }
+
+    h1 {
+        font-size: 2.5em; /* Điều chỉnh kích thước tiêu đề */
+    }
+
+    h2 {
+        font-size: 1.8em; /* Điều chỉnh kích thước phụ đề */
+    }
+
+    .message {
+        font-size: 1.1em;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+    }
+
+    .popup {
+        width: 80%;
+    }
+
+    .toast {
+        width: 200px;
+    }
+}
+
+/* Media query cho thiết bị có chiều rộng tối đa là 480px (điện thoại) */
+@media (max-width: 480px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 90%; /* Giới hạn chiều rộng của khung chứa */
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .slider {
+        max-width: 200px; /* Điều chỉnh kích thước slider */
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .message {
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+
+    .btn {
+        padding: 6px 12px;
+    }
+
+    .popup {
+        width: 90%;
+    }
+
+    .toast {
+        width: 180px;
+    }
+}
 
     </style>
 </head>
